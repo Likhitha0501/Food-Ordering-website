@@ -1,0 +1,46 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="navbar.css">
+<style>
+    .center{
+        justify-content: center;
+  align-items: center;
+  display:flex;
+  font-size: 24px;
+   color: black;
+    }
+    input[type=submit] {
+    font-size: 1.2em;
+    color: green;
+}
+</style>
+</head>
+<body>
+    <header>
+<div class="topnav">
+<nav>
+<b>
+<a href="index.html">Home</a>
+<a href="likki.html">Restaurants</a>
+<a href="orders.jsp">My Orders</a>
+<a href="logout.jsp">Logout</a>
+</b>
+</nav>
+</div>
+    <form action="iceberg.jsp" method="post">
+        <h1>ICE CREAMS</h1>
+        <img src="blackcurrant.jpg" style="height:200px;weight:280px">
+        <pre><input type="checkbox" name="blackcurrent" >Black Current  170  Quantity:<input type="number" name="blackcurrentq"></pre>
+        <img src="chocolate.jpg" style="height:200px;weight:280px">
+        <pre><input type="checkbox" name="chocolate" >Chocolate   180    Quantity:<input type="number" name="chocolateq"></pre>
+        <img src="darkchocolate.jpg" style="height:200px;weight:280px">
+        <pre><input type="checkbox" name="darkchocolate">Dark Chocolate   150  Quantity:<input type="number" name="darkchocolateq"></pre>
+        <img src="spider.jpg" style="height:200px;weight:280px">
+        <pre><input type="checkbox" name="spider">Spider   170   Quantity:<input type="number" name="spiderq"></pre>
+         <div class="center">
+        <input type="submit"  value="Order" >
+        </div>
+    </form>
+    </header>
+</body>
+</html>

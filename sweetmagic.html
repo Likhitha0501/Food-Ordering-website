@@ -1,0 +1,48 @@
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="navbar.css">
+<style>
+    .center{
+        justify-content: center;
+  align-items: center;
+  display:flex;
+  font-size: 24px;
+   color: black;
+    }
+    input[type=submit] {
+    font-size: 1.2em;
+    color: green;
+}
+</style>
+</head>
+<body>
+    <header>
+<div class="topnav">
+<nav>
+<b>
+<a href="index.html">Home</a>
+<a href="likki.html">Restaurants</a>
+<a href="orders.jsp">My Orders</a>
+<a href="logout.jsp">Logout</a>
+</b>
+</nav>
+</div>
+    <form action="sweetmagic.jsp" method="post">
+        <h1>DESSERTS</h1>
+        <img src="magiccookiebars.jpg" style="height:200px;weight:200px">
+        <pre><input type="checkbox" name="magiccookiebars" >Magic Cookie Bars  170  Quantity:<input type="number" name="magiccookiebarsq"></pre>
+        <img src="nobakechocolatecream.jpg" style="height:200px;weight:200px">
+        <pre><input type="checkbox" name="nobakechocolatecream" >No bake Chocolate cream   120    Quantity:<input type="number" name="nobakechocolatecreamq"></pre>
+        <img src="creamtarts.jpg" style="height:200px;weight:200px">
+        <pre><input type="checkbox" name="creamtarts">Cream Tarts   210  Quantity:<input type="number" name="creamtartsq"></pre>
+        <img src="donuts.jpg" style="height:200px;weight:200px">
+        <pre><input type="checkbox" name="donuts">Donuts   150   Quantity:<input type="number" name="donutsq"></pre>
+        <div class="center">
+        <input type="submit"  value="Order" >
+        </div>
+       
+    </form>
+    </header>
+</body>
+</html>

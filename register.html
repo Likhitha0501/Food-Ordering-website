@@ -1,0 +1,56 @@
+<html>
+<head>
+	<style>
+		body{
+			background-image: url("image.png");
+			background-repeat: no-repeat;
+			background-size: cover;
+			color: blueviolet;
+			padding-left: 35%;
+                         padding-right: 30%;
+                         padding-top: 15%;
+                        font-size: 50px;
+		}
+	</style>
+</head>
+<body>
+<fieldset>
+<form name="forms" action="submit" method="post">
+<table align="center">
+<legend width="70%">Registration Form</legend>
+<tr><td>Name* </td><td><input type="text" name="n"></td></tr>
+<tr><td>User Name* </td><td><input type="text" name="un"></td></tr>
+<tr><td>Password* </td><td> <input type="password" name="up"></td></tr>
+<tr><td>Mobile No* </td><td><input type="text" name="um"></td></tr>
+<tr><td>Email* </td><td><input type="email" name="ue"></td></tr>
+<tr><td>Address*</td><td><input type="text" name="ua" style="height:50px"></td></tr>
+<tr><td><input type="submit" value="submit" name="click" onclick="javascript: return validate()"></td></tr>
+</table>
+</form>
+</fieldset>
+</body>
+<script>
+function validate()
+{
+var c=document.getElementById("n").value;
+var p=document.getElementById("up").value;
+var m=document.getElementById("ue").value;
+var a=/^[A-Za-z]+$/;
+if(c.match(a))
+{return true;
+}else
+{
+alert('Only characters!! in Name :)');
+return false;
+}
+if(m.search('@'))
+{return true;
+}else
+{
+alert('Only characters!! in Name :)');
+return false;
+}
+}
+</script>
+
+</html>
